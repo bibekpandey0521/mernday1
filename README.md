@@ -62,7 +62,10 @@ root/
   - server.js
   - app.js
   - routes/
+  - constants/
+    - roles.js   
   - controllers/
+    -  userControllers.js
   - services/
   - models/
   - constants/
