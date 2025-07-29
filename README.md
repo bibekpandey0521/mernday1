@@ -62,14 +62,20 @@ root/
   - server.js
   - app.js
   - routes/
+     - userRoute.js 
   - constants/
     - roles.js   
   - controllers/
     -  userControllers.js
   - services/
+    - userServices.js
   - models/
+    - User.js
   - constants/
   - lib/
+    - userType.js
   - utils/
+    - jwtAuth.js 
   - helpers/
+    - dataFormatter.js
   
