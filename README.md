@@ -46,4 +46,27 @@
   - 502: Bad Gateway
   - 504: Timeout
 
+# Semantic coding
 
+1. Files and folder Structures
+2. FIles and folder naming
+3. Function and variable naming
+
+## API Folder Structure
+root/
+- package.json
+- .env
+- gitignore
+- node_modules/
+-  src/
+  - server.js
+  - app.js
+  - routes/
+  - controllers/
+  - services/
+  - models/
+  - constants/
+  - lib/
+  - utils/
+  - helpers/
+  
