@@ -1,6 +1,8 @@
-# MERN Stack E-commerce
+ MERN Stack E-commerce
 # important command
-# npm install -D nodemon
-# npm i dotenv
+ - npm install -D nodemon
+ - npm i dotenv
+
+- JSON(JavaScriptObjectNotation)
 
 
