@@ -1,0 +1,20 @@
+[
+    {"name":"Ram","age":"20","address":"XYZ","email":"ram123@gmail.com","isMale":true}
+    ,{
+        "name":"Ram",
+        "age":"20",
+        "address":"XYZ",
+        "email":"ram123@gmail.com",
+        "isMale":true,
+        "phone-number":"+77 543 34 543 23"
+    },
+    {
+        "name":"Shyam",
+        "age":30,
+        "address":"XYZ",
+        "email":"shyam123@gmail.com",
+        "isMale":false,
+        "phoneNumber":"+77 543 34 543 23"
+        
+    }
+]

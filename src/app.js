@@ -2,6 +2,7 @@ import express from "express";
 import fs from "fs";
 import dotenv from "dotenv";
 import config from "./config/config.js";
+import productRoutes from "./routes/productRoute.js";
 
 dotenv.config();
 
@@ -27,13 +28,14 @@ app.get("/",(req,res)=>{
         name:config.name,
         port:config.port,
         version:config.version,
+        status: "Ok",
         // port:PORT,
         // version: VERSION,
         feature: config.enableTestFeature ? "Enabled": "Disabled",
     });
 });
 
-app.get("/products",(req,res)=>{
+app.get("/allproducts",(req,res)=>{
 
     // const products = ["Samsung s24 ultra","Iphone 12","Dell Prediator"];
     const products = fs.readFileSync("./src/data/products.json","utf8");
@@ -66,3 +68,13 @@ app.put("/",(req,res)=>{
 app.listen(config.port,(req,res)=>{
     console.log(`Server running at config.port ${config.port}..`)
 })
+
+const profile = {
+    name:"Ram",
+    age:20,
+    address:"xyz",
+    email:"ram12@gmail.com"
+}
+
+// app.use("/",productRoutes);
+app.use("/products",productRoutes);
